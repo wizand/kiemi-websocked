@@ -1,0 +1,128 @@
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.box {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+}
+
+.header {
+    background-image: linear-gradient(180deg, rgba(80,80,80,0.65), rgba(0,0,0,0.66));
+    text-align: center;
+    padding-top: 12px;
+    color: whitesmoke;
+}
+
+.footer {
+    background-image: linear-gradient(180deg,rgba(80,80,80,0.65), rgba(0,0,0,0.7));
+    text-align: center;
+    padding-top: 30px;
+    font-size: 88%;
+    color: whitesmoke;
+}
+
+.content  {
+    background-image: linear-gradient(180deg,rgba(80,80,80,0.6), rgba(0,0,0,0.7));
+    text-align: center;
+}
+
+.row {
+    margin-right: 0px; 
+    margin-left: 0px;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 900;
+    font-size: 53px;
+}
+.box .row.header {
+  flex: 0 1 125px;
+}
+
+.box .row.content {
+  flex: 1 1 auto;
+}
+
+.box .row.footer {
+  flex: 0 1 75px;
+}
+
+
+.moveContentOutToLeft {
+  animation: moveContentOutToLeft 0.3s;
+}
+
+.moveContentOutToRight {
+  animation: moveContentOutToRight 0.3s;
+}
+
+@keyframes moveContentOutToLeft  {
+
+  0% {}
+  100% {transform: translateX(-2000px)}
+}
+
+@keyframes moveContentOutToRight  {
+
+  0% {}
+  100% {transform: translateX(2000px)}
+}
+
+
+
+.moveContentInFromRight 
+{
+  animation-iteration-count: 1;
+  animation: moveContentInFromRight 0.3s;
+}
+
+.moveContentInFromLeft 
+{
+  animation-iteration-count: 1;
+  animation: moveContentInFromLeft 0.3s;
+}
+
+@keyframes moveContentInFromRight 
+{
+  0% {transform: translateX(2000px);}
+  100% {transform: translateX(0px);}
+}
+
+@keyframes moveContentInFromLeft 
+{
+  0% {transform: translateX(-2000px);}
+  100% {transform: translateX(0px);}
+}
+
+
+/*These are deprecated when the directional animations are found to be ok
+
+.moveContentOut {
+  animation-iteration-count: 1;
+  animation: moveContentOut 0.3s;
+}
+
+@keyframes moveContentOut  {
+
+  0% {}
+  100% {transform: translateX(1000px)}
+}
+
+
+.moveContentIn {
+  
+  animation-iteration-count: 1;
+  animation: moveContentIn 0.3s;
+}
+
+@keyframes moveContentIn  {
+
+  0% {transform: translateX(-1000px);}
+  100% {transform: translateX(0px);}
+}
+*/

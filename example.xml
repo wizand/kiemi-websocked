@@ -1,0 +1,19 @@
+<dataset>
+<name>imglab dataset</name>
+<comment>Created by imglab tool</comment>
+</dataset>
+    <images>
+        <image file='/path/to/file/file1.jpg'>
+            <box top='11' left='3' width='180' height='246' />
+        </image>
+        <image file='/path/to/file/file2.jpg'>
+            <box top='11' left='3' width='180' height='246' />
+        </image>
+        <image file='/path/to/file/file3.jpg'>
+            <box top='11' left='3' width='180' height='246' />
+        </image>
+        <image file='/path/to/file/file4.jpg'>
+            <box top='11' left='3' width='180' height='246' />
+        </image>
+    </images>
+</dataset>
